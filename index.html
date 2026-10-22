@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martín Ezequiel Abraham Solsona | DT Nacional ATFA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1e3a8a', /* Royal Blue */
+                            light: '#2563eb',
+                            green: '#39ff14', /* Neon Green */
+                            dark: '#0f172a',
+                            gray: '#f3f4f6'
+                        }
+                    },
+                    fontFamily: {
+                        lato: ['Lato', 'sans-serif'],
+                        sans: ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #334155;
+        }
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Lato', sans-serif;
+        }
+        
+        /* Custom Button */
+        .btn-green {
+            background-color: #39ff14;
+            color: #0f172a;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(57, 255, 20, 0.4);
+        }
+        .btn-green:hover {
+            background-color: #32cd11;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Image Gradient overlay to match reference */
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.75rem;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: #39ff14;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- NAVBAR -->
+    <nav class="bg-brand-blue text-white w-full z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-heading font-black text-3xl tracking-tighter">
+                        <span class="text-brand-green">M</span>A
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-heading text-sm uppercase font-bold tracking-wider">
+                    <a href="#inicio" class="text-brand-green border-b-2 border-brand-green py-2">Inicio</a>
+                    <a href="#perfil" class="hover:text-brand-green transition-colors py-2">Perfil</a>
+                    <a href="#metodologia" class="hover:text-brand-green transition-colors py-2">Metodología</a>
+                    <a href="#tactica" class="hover:text-brand-green transition-colors py-2">Táctica</a>
+                    <a href="#contacto" class="hover:text-brand-green transition-colors py-2">Contacto</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-white hover:text-brand-green focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="inicio" class="hero-bg relative pt-12 pb-0 md:pt-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+                
+                <!-- Left Column: Title & Badges -->
+                <div class="md:col-span-5 text-center md:text-left pt-10 pb-20 z-20">
+                    <h2 class="text-brand-green font-heading font-bold tracking-widest text-lg md:text-xl uppercase mb-2">Director Técnico Nacional ATFA</h2>
+                    <h1 class="text-5xl md:text-7xl font-heading font-black text-white leading-none uppercase mb-12 relative">
+                        Martín<br>Abraham
+                    </h1>
+
+                    <div class="hidden md:block space-y-6">
+                        <div class="flex items-center gap-4 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
+                            <div class="w-12 h-12 rounded-full bg-brand-green flex items-center justify-center text-brand-dark text-xl">
+                                <strong>A</strong>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-white leading-tight">Licencia A</h4>
+                                <p class="text-xs text-blue-200">CONMEBOL</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
+                            <div class="w-12 h-12 rounded-full bg-brand-green flex items-center justify-center text-brand-dark text-xl">
+                                <strong>B</strong>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-white leading-tight">Licencia B</h4>
+                                <p class="text-xs text-blue-200">Reserva</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
+                            <div class="w-12 h-12 rounded-full bg-brand-green flex items-center justify-center text-brand-dark text-xl">
+                                <strong>C</strong>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-white leading-tight">Licencia C</h4>
+                                <p class="text-xs text-blue-200">Formativo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="md:col-span-7 relative w-full max-w-2xl mx-auto md:ml-auto md:mr-0 mt-8 md:-mt-10 z-10 flex justify-end">
+                    <img src="turco.png" alt="Martín Abraham" class="w-full h-auto object-cover object-bottom drop-shadow-2xl" onerror="this.src='https://placehold.co/800x800/1e3a8a/ffffff?text=Martín+Abraham';">
+                </div>
+            </div>
+        </div>
+        <!-- Abstract background pattern -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="perfil" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Left: Image -->
+                <div class="relative">
+                    <div class="absolute inset-0 bg-brand-green transform translate-x-4 translate-y-4 rounded-xl"></div>
+                    <img src="https://placehold.co/600x700/f3f4f6/1e3a8a?text=Foto+Táctica" alt="Entrenador en Acción" class="relative rounded-xl shadow-xl w-full object-cover h-[500px]">
+                </div>
+                
+                <!-- Right: Content -->
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-heading font-black text-brand-blue mb-6 uppercase">
+                        Perfil del <br>Entrenador
+                    </h2>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        Entrenador con formación integral y amplia experiencia como futbolista profesional en Nacional B, Federal A, y fútbol internacional. 
+                    </p>
+                    <p class="mb-8 text-gray-600 leading-relaxed">
+                        Destaco por un liderazgo positivo, comunicación clara y directa. Mi modelo de juego es adaptable a cada plantel y cancha. Busco el desarrollo de jóvenes con proyección a Primera División, aportando disciplina, trabajo y compromiso institucional.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-6 mb-10 border-t border-gray-200 pt-8">
+                        <div class="text-center md:text-left">
+                            <span class="block text-4xl font-heading font-black text-brand-blue">+14</span>
+                            <span class="text-xs font-bold text-gray-500 uppercase tracking-wide">Clubes Jugados</span>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <span class="block text-4xl font-heading font-black text-brand-blue">3</span>
+                            <span class="text-xs font-bold text-gray-500 uppercase tracking-wide">Licencias ATFA</span>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <span class="block text-4xl font-heading font-black text-brand-blue">+5</span>
+                            <span class="text-xs font-bold text-gray-500 uppercase tracking-wide">Años Exp. DT</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contacto" class="btn-green font-heading">Contactar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METHODOLOGY & EXPERIENCE SECTION -->
+    <section id="metodologia" class="py-20 bg-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-5xl font-heading font-black text-brand-blue mb-4 uppercase">Metodología de Trabajo</h2>
+                <p class="text-lg text-gray-600">Todo integrado: Técnica + Táctica + Física + Cognitiva. Nada separado. Todo con balón, con oposición y con toma de decisión real.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Checklist -->
+                <div>
+                    <h3 class="text-2xl font-heading font-bold text-brand-dark mb-6">Pilares del Entrenamiento</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-light mt-1 mr-4 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">Intensidad > Volumen</h4>
+                                <p class="text-sm text-gray-600">Sesiones de 80-90 min máximo, con ritmo alto y pausas cortas.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-light mt-1 mr-4 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">Explicación Clara y Directa</h4>
+                                <p class="text-sm text-gray-600">Explicación de 5 min. + ejecución. Ir al grano sin charlas que aburran.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-light mt-1 mr-4 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">Tareas Competitivas</h4>
+                                <p class="text-sm text-gray-600">Ejercicios con puntaje, presión, premio y castigo deportivo.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-light mt-1 mr-4 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">Desarrollo Cognitivo</h4>
+                                <p class="text-sm text-gray-600">Que el jugador entienda el POR QUÉ, que tome decisiones y no dependa del grito del DT.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h3 class="text-2xl font-heading font-bold text-brand-dark mt-12 mb-6">Trayectoria Destacada (DT)</h3>
+                    <div class="relative border-l-2 border-brand-light ml-3 space-y-6">
+                        <div class="relative pl-6 timeline-item">
+                            <h4 class="font-bold text-brand-blue">C.A. Costa Brava (Gral. Pico)</h4>
+                            <p class="text-sm font-semibold text-brand-light">2022 - DT Categoría 2011</p>
+                            <p class="text-sm text-gray-600 mt-1">Formación técnica y táctica infantil. Metodología integral.</p>
+                        </div>
+                        <div class="relative pl-6 timeline-item">
+                            <h4 class="font-bold text-brand-blue">Altos Hornos Zapla (Jujuy)</h4>
+                            <p class="text-sm font-semibold text-brand-light">2020 - DT Reserva Sub 21</p>
+                            <p class="text-sm text-gray-600 mt-1">Transición de juveniles a Primera. Video análisis y desarrollo.</p>
+                        </div>
+                        <div class="relative pl-6 timeline-item">
+                            <h4 class="font-bold text-brand-blue">Escuelita 'Turkito Abraham'</h4>
+                            <p class="text-sm font-semibold text-brand-light">2019 - Fundador y DT</p>
+                            <p class="text-sm text-gray-600 mt-1">Proyecto formativo, planificación anual y valores humanos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Images Grid -->
+                <div class="grid grid-cols-1 gap-6">
+                    <img src="https://placehold.co/800x400/1e3a8a/ffffff?text=Trabajo+en+Cancha" alt="Trabajo en cancha" class="w-full h-64 object-cover rounded-xl shadow-md">
+                    <img src="https://placehold.co/800x400/2563eb/ffffff?text=Videoan%C3%A1lisis" alt="Análisis Táctico" class="w-full h-64 object-cover rounded-xl shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TACTICS CARDS SECTION -->
+    <section id="tactica" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-heading font-black text-brand-blue mb-4 uppercase">Sistemas y Modelos de Juego</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Versatilidad táctica adaptada al plantel y al rival, priorizando siempre el orden, la intensidad y el protagonismo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-brand-gray p-8 rounded-xl border-t-4 border-brand-light hover:shadow-xl transition-shadow text-center group">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-blue-100 flex items-center justify-center text-brand-light text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-chess-board"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-brand-dark mb-3">SISTEMA 4-2-3-1</h4>
+                    <p class="text-sm font-semibold text-brand-light mb-3">Principal - Reserva y Primera</p>
+                    <p class="text-sm text-gray-600">Equilibrio total. Doble 5 para salida limpia, laterales altos, extremos a pierna cambiada. Ideal para dominio y presión.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-brand-gray p-8 rounded-xl border-t-4 border-brand-light hover:shadow-xl transition-shadow text-center group">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-blue-100 flex items-center justify-center text-brand-light text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-meteor"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-brand-dark mb-3">SISTEMA 4-3-3</h4>
+                    <p class="text-sm font-semibold text-brand-light mb-3">Alternativo Ofensivo</p>
+                    <p class="text-sm text-gray-600">Para buscar el partido. Un 5 posicional + 2 interiores. Extremos abiertos para amplitud y 1 vs 1. Superioridad en el medio.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-brand-gray p-8 rounded-xl border-t-4 border-brand-light hover:shadow-xl transition-shadow text-center group">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-blue-100 flex items-center justify-center text-brand-light text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-brand-dark mb-3">SISTEMA 4-4-2</h4>
+                    <p class="text-sm font-semibold text-brand-light mb-3">Sacrificio y Orden</p>
+                    <p class="text-sm text-gray-600">Equipo compacto, 2 líneas de 4 juntas a 25 metros. Ideal para canchas chicas y viento. Juego directo y práctico.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-brand-gray p-8 rounded-xl border-t-4 border-brand-light hover:shadow-xl transition-shadow text-center group">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-blue-100 flex items-center justify-center text-brand-light text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-brand-dark mb-3">GESTIÓN HUMANA</h4>
+                    <p class="text-sm font-semibold text-brand-light mb-3">Liderazgo y Grupo</p>
+                    <p class="text-sm text-gray-600">Reuniones individuales, comunicación con la dirigencia, respeto total. El grupo siempre por encima de las individualidades.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA SECTION -->
+    <section id="galeria" class="py-20 bg-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-heading font-black text-brand-blue mb-4 uppercase">En Acción</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <img src="1.jpeg" alt="Acción 1" class="w-full h-64 object-cover object-top rounded-xl shadow-md hover:scale-105 transition-transform duration-300 border-4 border-white">
+                <img src="2.jpeg" alt="Acción 2" class="w-full h-64 object-cover object-center rounded-xl shadow-md hover:scale-105 transition-transform duration-300 border-4 border-white">
+                <img src="3.jpeg" alt="Acción 3" class="w-full h-64 object-cover object-top rounded-xl shadow-md hover:scale-105 transition-transform duration-300 border-4 border-white">
+                <img src="4.jpeg" alt="Acción 4" class="w-full h-64 object-cover object-center rounded-xl shadow-md hover:scale-105 transition-transform duration-300 border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA -->
+    <section class="relative bg-brand-blue py-16">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://placehold.co/1920x400/0f172a/ffffff?text=Estadio" alt="Background" class="w-full h-full object-cover opacity-20 mix-blend-overlay">
+        </div>
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between z-10">
+            <div class="text-center md:text-left mb-8 md:mb-0">
+                <h2 class="text-3xl md:text-4xl font-heading font-black text-white mb-2 uppercase">Liderazgo Positivo y Competitividad</h2>
+                <p class="text-blue-200 text-lg">Un proyecto deportivo serio, estructurado y enfocado en resultados.</p>
+            </div>
+            <a href="https://wa.me/5493885860878" target="_blank" class="btn-green text-lg">Agendar Reunión</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="bg-[#0f172a] text-white pt-16 pb-8 border-t-4 border-brand-green">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                
+                <!-- Logo & About -->
+                <div>
+                    <span class="font-heading font-black text-4xl tracking-tighter mb-6 block">
+                        <span class="text-brand-green">M</span>A
+                    </span>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Director Técnico Nacional ATFA. Proyecto deportivo 2026-2027 enfocado en el desarrollo, orden táctico y alta competencia para equipos de Reserva y Primera División.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-6 uppercase text-white">Enlaces Rápidos</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#inicio" class="hover:text-brand-green transition-colors">Inicio</a></li>
+                        <li><a href="#perfil" class="hover:text-brand-green transition-colors">Biografía y Perfil</a></li>
+                        <li><a href="#metodologia" class="hover:text-brand-green transition-colors">Metodología y Trayectoria</a></li>
+                        <li><a href="#tactica" class="hover:text-brand-green transition-colors">Sistemas Tácticos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-6 uppercase text-white">Contacto Profesional</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp text-brand-green text-xl mr-4 w-6 text-center"></i>
+                            <a href="https://wa.me/5493885860878" class="hover:text-white transition-colors" target="_blank">3885860878</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="far fa-envelope text-brand-green text-xl mr-4 w-6 text-center"></i>
+                            <a href="mailto:martinabraham1991@hotmail.com" class="hover:text-white transition-colors">martinabraham1991@hotmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-brand-green text-xl mr-4 w-6 text-center"></i>
+                            <span>Santa Rosa, La Pampa, Argentina</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="flex space-x-4 mt-8">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-brand-dark transition-all">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-brand-dark transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2026 Martín Ezequiel Abraham Solsona. Todos los derechos reservados.</p>
+                <div class="mt-4 md:mt-0 flex space-x-4">
+                    <a href="#" class="hover:text-white">Aviso Legal</a>
+                    <a href="#" class="hover:text-white">Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
